@@ -15,15 +15,17 @@ public class Spawner : MonoBehaviour
     /// </summary>
     public bool spawnObstacles = true;
 
+    public float acceleration = 0.05f;
+
     /// <summary>
     /// Mean frequency of spawning as n per second.
     /// </summary>
-    private float spawnFrequencyMean = 2.0f;
+    public float spawnFrequencyMean = 2.0f;
     
     /// <summary>
     /// Standard deviation of the frequency of spawning as n per second.
     /// </summary>
-    private float spawnFrequencyStd = 0.4f;
+    public float spawnFrequencyStd = 0.4f;
     
     /// <summary>
     /// Position offset of the spawned obstacles.
@@ -33,7 +35,7 @@ public class Spawner : MonoBehaviour
     /// <summary>
     /// Size of the spawned obstacles.
     /// </summary>
-    private float spawnSize = 0.6f;
+    private float spawnSize = 0.75f;
     
     /// <summary>
     /// Layer used for the spawned obstacles.
@@ -54,6 +56,10 @@ public class Spawner : MonoBehaviour
     /// Number of seconds since the last spawn.
     /// </summary>
     private float nextSpawnIn = 0.0f;
+
+    private float time;
+
+    private float curSpawnFMean;
 
     /// <summary>
     /// Called before the first frame update.
@@ -79,6 +85,10 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    void FixedUpdate() {
+         time += Time.deltaTime;
+    }
+
     /// <summary>
     /// Spawn obstacle if there is enough space.
     /// </summary>
@@ -86,6 +96,9 @@ public class Spawner : MonoBehaviour
     {
         // Spawn the obstacle.
         var obstacle = Instantiate(obstaclePrefab, transform);
+        var speed = obstacle.GetComponent<Obstacle>().movementSpeed;
+        obstacle.GetComponent<Obstacle>().movementSpeed = speed + acceleration * time;
+        curSpawnFMean = (curSpawnFMean > spawnFrequencyStd) ? curSpawnFMean - acceleration : spawnFrequencyStd;
 
         // Move it to the target location.
         var spawnDown = RandomBool();
@@ -120,8 +133,10 @@ public class Spawner : MonoBehaviour
     /// </summary>
     public void ResetSpawn()
     {
+        time = 0.0f;
+        curSpawnFMean = spawnFrequencyMean;
         spawnAccumulator = 0.0f;
-        nextSpawnIn = RandomNormal(spawnFrequencyMean, spawnFrequencyStd);
+        nextSpawnIn = RandomNormal(curSpawnFMean, spawnFrequencyStd);
     }
 
     /// <summary>
@@ -152,7 +167,7 @@ public class Spawner : MonoBehaviour
         var v1 = 1.0f - Random.value;
         var v2 = 1.0f - Random.value;
         
-        var standard = Math.Sqrt(-2.0f * Math.Log(v1)) * Math.Sin(2.0f * Math.PI * v2);
+        var standard = Math.Sqrt(-2.0f * Math.Log(v1)) * Math.Sin((Time.fixedTime + 1)/(v2 + 1));
         
         return (float)(mean + std * standard);
     }

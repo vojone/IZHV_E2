@@ -19,11 +19,6 @@ public class Obstacle : MonoBehaviour
     /// </summary>
     public float movementSpeed = 2.0f;
 
-
-    /// <summary>
-    /// Specifies how much obstacles accelerate
-    /// </summary>
-    public float acceleration = 0.05f;
     
     /// <summary>
     /// Direction of movement.
@@ -47,9 +42,8 @@ public class Obstacle : MonoBehaviour
     {
         mRB = GetComponent<Rigidbody2D>();
         mBC = GetComponent<BoxCollider2D>();
-
-        var time = Time.fixedTime;
-        mRB.velocity = movementDirection * (movementSpeed + acceleration*time);
+        
+        mRB.velocity = movementDirection * (movementSpeed);
     }
 
     /// <summary>

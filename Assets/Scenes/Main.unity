@@ -682,6 +682,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   rotationSpeed: 300
+  smileAtEvery: 10
   rotateAxis:
     x: 1
     y: 0
@@ -1186,13 +1187,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnObstacles: 1
-  spawnFrequencyMean: 4
-  spawnFrequencyStd: 0.5
+  acceleration: 0.05
+  spawnFrequencyMean: 2
+  spawnFrequencyStd: 0.4
   spawnOffset:
     x: 0
     y: 2
     z: 0
-  spawnSize: 0.75
   spawnLayer: Obstacle
   obstaclePrefab: {fileID: 444823138257878674, guid: d9e6dffab2dc3ef4dbf678bf85c63c93, type: 3}
 --- !u!1 &1213650991

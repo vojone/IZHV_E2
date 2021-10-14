@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Console
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 86
+  controlID: 20
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 466
     height: 631
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 23
+  controlID: 42
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 22
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 85
+  controlID: 19
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,24 +347,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1600
+    x: 1454
     y: 73
-    width: 319
+    width: 465
     height: 610
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: -1
+  progressMessageClearTime: 142.0809991
   notificationClearTime: -1
   timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
+  currentBranchAndRemoteHasUpdate: 1
+  currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
-  changeTab: 2
-  activeTab: 2
+  appManagerProgressHasUpdate: 0
+  changeTab: 4
+  activeTab: 4
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -375,8 +375,19 @@ MonoBehaviour:
     treeLocals:
       IsRemote: 0
       folders:
-        keys: []
-        values: []
+        keys:
+        - Local branches
+        values:
+        - path: Local branches
+          label: Local branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -385,7 +396,27 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Local branches
+        label: Local branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: master
+        label: master
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -400,8 +431,30 @@ MonoBehaviour:
     treeRemotes:
       IsRemote: 1
       folders:
-        keys: []
-        values: []
+        keys:
+        - Remote branches
+        - origin
+        values:
+        - path: Remote branches
+          label: Remote branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -410,7 +463,37 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Remote branches
+        label: Remote branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -425,52 +508,2003 @@ MonoBehaviour:
     mode: 0
     newBranchName: 
     scroll: {x: 0, y: 0}
-    disableDelete: 0
-    disableCreate: 0
+    disableDelete: 1
+    disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:39.574+02:00
+      cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:12.755+02:00
+      cacheType: 1
     currentBranch:
-      name: 
-      tracking: 
+      name: master
+      tracking: origin/master
     currentRemote:
-      name: 
-      url: 
+      name: origin
+      url: https://github.com/vojone/IZHV_E2.git
       login: 
       user: 
       host: 
       function: 0
       token: 
-    localBranches: []
-    remoteBranches: []
+    localBranches:
+    - name: master
+      tracking: origin/master
+    remoteBranches:
+    - name: origin/master
+      tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
-    currentBranch: '[unknown]'
+    currentBranch: '[master]'
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys: []
-        values: []
+        keys:
+        - 00000000000000001000000000000000
+        - 720712be6e31c444f88f57bb85bf5fa5
+        - 18e096a98c2704c40a818dd1214cd179
+        - cad92998c5182496e8b989b406d9f156
+        - d516f2a1bec6a9645a084ef8c9237132
+        - f81094832d834c64d93b198cb16b6a3e
+        - c743ae24ee231884887054d20ccdd0ab
+        - c743ae24ee231884887054d20ccdd0ae
+        - 15ca2bebf173f2d4484686a03a45b56d
+        - 68c7e4565cde54155bb78d8e935f1ddb
+        - 68c7e4565cde54155bb78d8e935f1dd4
+        - 863e1b9976c4e46d29bf83928b3a8ab2
+        - ddb8611e748af425a82a497ac5a98c0c
+        - 48c22d5d7479fcb49ab3be0cdd2ccec0
+        - f9fc9b08ecd899944adf9860b4abd6b6
+        - 790749ba7e4b18141953e39cb13f1b79
+        - a0ded7adcc817ce489fec07977f16d13
+        - 868fbb4c41814baebc00f96e24ede2f8
+        - fe5abeadcbe591e4fa9107fbc02f3998
+        - 99b48d4d4f6a66340ab06bd487d70a45
+        - 151a1d946b98deb4b98445400983ba92
+        - a83159a46d87d2a4f8cec651049b9231
+        - 04ed40ccbfa1d414fbb6d6b6f123bc06
+        - 7f3dbc4e53177b44cb01d9e7d02d9468
+        - 4e3acb28f27943844a4226b07fccef93
+        - 7d6d1c361cca72e41a2f007459ae6601
+        - 48504ad75d58d3741bdf9ba882d4c968
+        - 17099c29bbdf87a42b9e025528803662
+        - a9044ead2ca10284fafca3e05a814762
+        - 0b9592074f8a9fd4bae6ee1c15ebe54f
+        - 89585aa989b3cd04fbc4f670c512e0d7
+        - 09ab6a8b3f89b6d4bb11b7e9909eb581
+        - 320a8bcc2f3c4484f81991ded8abb5a5
+        - cd1585e9add205a47b4fcdd932554559
+        - 98224daead355dd458e80048199e1478
+        - a0ff8b2aa56bccd4ca8ae6ecda4cee8a
+        - b40403d68540a5b4ba460d723891bc6e
+        - 0a1c8c136bf8ca34687f7111a744e3d2
+        - f42b81cf3c5e49541808795350f8f5f2
+        - 710faad492574cf4d9e48129e6a22b90
+        - b951f80b40660794caa62bfbffca39ad
+        - 9dfdebfff98de9c468244febed0645a8
+        - af5cf6497b5751c458a4ce63692b5557
+        - 81d68a40d65fa184aae17285ae0fd316
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins
+          label: Plugins
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub
+          label: GitHub
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor
+          label: Editor
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          label: AsyncBridge.Net35.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\AsyncBridge.Net35.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          label: big-logo@2x.png
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\big-logo@2x.png"
+            projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          label: GitHub.Api.45.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.45.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          label: GitHub.Api.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          label: GitHub.Logging.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Logging.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          label: GitHub.Unity.45.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.45.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          label: GitHub.Unity.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          label: GitHub.UnityShim.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.UnityShim.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          label: Mono.Posix.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\Mono.Posix.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          label: ReadOnlyCollectionsInterfaces.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\ReadOnlyCollectionsInterfaces.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+          label: sfw.net.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\sfw.net.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+          label: System.Threading.dll
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\System.Threading.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\x64
+          label: x64
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          label: pthreadVC2.dll
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\pthreadVC2.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          label: sfw_x64.dll
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\sfw_x64.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\x86
+          label: x86
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          label: pthreadVC2.dll
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\pthreadVC2.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          label: sfw_x86.dll
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\sfw_x86.dll"
+            projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Main.unity
+          label: Main.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Main.unity
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+            projectPath: Assets\Scenes\Main.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites
+          label: Sprites
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Obstacle
+          label: Obstacle
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Obstacle\Obstacle0.png
+          label: Obstacle0.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle0.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle0.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle0.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\Obstacle1.png
+          label: Obstacle1.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle1.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle1.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle1.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\Obstacle2.png
+          label: Obstacle2.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle2.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle2.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle2.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\Obstacle3.png
+          label: Obstacle3.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle3.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle3.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle3.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\Obstacle4.png
+          label: Obstacle4.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle4.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle4.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle4.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\Obstacle5.png
+          label: Obstacle5.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\Obstacle5.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle5.png"
+            projectPath: Assets\Sprites\Obstacle\Obstacle5.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\ObstacleMask1.png
+          label: ObstacleMask1.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\ObstacleMask1.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask1.png"
+            projectPath: Assets\Sprites\Obstacle\ObstacleMask1.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\ObstacleMask2.png
+          label: ObstacleMask2.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\ObstacleMask2.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask2.png"
+            projectPath: Assets\Sprites\Obstacle\ObstacleMask2.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\ObstacleMask3.png
+          label: ObstacleMask3.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\ObstacleMask3.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask3.png"
+            projectPath: Assets\Sprites\Obstacle\ObstacleMask3.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+          label: ObstacleMaskFull.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMaskFull.png"
+            projectPath: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Platform
+          label: Platform
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Platform\Background.png
+          label: Background.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Platform\Background.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Background.png"
+            projectPath: Assets\Sprites\Platform\Background.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Platform\Foreground.png
+          label: Foreground.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Platform\Foreground.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Foreground.png"
+            projectPath: Assets\Sprites\Platform\Foreground.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Player
+          label: Player
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Player\PlayerHappy.png
+          label: PlayerHappy.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Player\PlayerHappy.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerHappy.png"
+            projectPath: Assets\Sprites\Player\PlayerHappy.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Player\PlayerNeutral.png
+          label: PlayerNeutral.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Player\PlayerNeutral.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerNeutral.png"
+            projectPath: Assets\Sprites\Player\PlayerNeutral.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Player\PlayerPog.png
+          label: PlayerPog.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Player\PlayerPog.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerPog.png"
+            projectPath: Assets\Sprites\Player\PlayerPog.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites\Player\PlayerSad.png
+          label: PlayerSad.png
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Player\PlayerSad.png
+            fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerSad.png"
+            projectPath: Assets\Sprites\Player\PlayerSad.png
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets\Plugins
+        - Assets\Plugins\GitHub
+        - Assets\Plugins\GitHub\Editor
+        - Assets\Plugins\GitHub\Editor\x64
+        - Assets\Plugins\GitHub\Editor\x86
+        - Assets\Scenes
+        - Assets\Sprites
+        - Assets\Sprites\Obstacle
+        - Assets\Sprites\Platform
+        - Assets\Sprites\Player
+        - UserSettings
+        - UserSettings\Layouts
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins
+          label: Plugins
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub
+          label: GitHub
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor
+          label: Editor
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64
+          label: x64
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86
+          label: x86
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites
+          label: Sprites
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Obstacle
+          label: Obstacle
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Platform
+          label: Platform
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Player
+          label: Player
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
       title: 
-      pathSeparator: /
+      pathSeparator: \
       displayRootNode: 0
       isSelectable: 1
       isCheckable: 1
       isUsingGlobalSelection: 1
-      nodes: []
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins
+        label: Plugins
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins\GitHub
+        label: GitHub
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor
+        label: Editor
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        label: AsyncBridge.Net35.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\AsyncBridge.Net35.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        label: big-logo@2x.png
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\big-logo@2x.png"
+          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        label: GitHub.Api.45.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.45.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        label: GitHub.Api.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        label: GitHub.Logging.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Logging.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        label: GitHub.Unity.45.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.45.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        label: GitHub.Unity.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        label: GitHub.UnityShim.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.UnityShim.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        label: Mono.Posix.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\Mono.Posix.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        label: ReadOnlyCollectionsInterfaces.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\ReadOnlyCollectionsInterfaces.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+        label: sfw.net.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\sfw.net.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+        label: System.Threading.dll
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\System.Threading.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\x64
+        label: x64
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        label: pthreadVC2.dll
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\pthreadVC2.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        label: sfw_x64.dll
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\sfw_x64.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\x86
+        label: x86
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        label: pthreadVC2.dll
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\pthreadVC2.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        label: sfw_x86.dll
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\sfw_x86.dll"
+          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scenes\Main.unity
+        label: Main.unity
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\Main.unity
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+          projectPath: Assets\Scenes\Main.unity
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites
+        label: Sprites
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Obstacle
+        label: Obstacle
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Obstacle\Obstacle0.png
+        label: Obstacle0.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle0.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle0.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle0.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\Obstacle1.png
+        label: Obstacle1.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle1.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle1.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle1.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\Obstacle2.png
+        label: Obstacle2.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle2.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle2.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle2.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\Obstacle3.png
+        label: Obstacle3.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle3.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle3.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle3.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\Obstacle4.png
+        label: Obstacle4.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle4.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle4.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle4.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\Obstacle5.png
+        label: Obstacle5.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\Obstacle5.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle5.png"
+          projectPath: Assets\Sprites\Obstacle\Obstacle5.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\ObstacleMask1.png
+        label: ObstacleMask1.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\ObstacleMask1.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask1.png"
+          projectPath: Assets\Sprites\Obstacle\ObstacleMask1.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\ObstacleMask2.png
+        label: ObstacleMask2.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\ObstacleMask2.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask2.png"
+          projectPath: Assets\Sprites\Obstacle\ObstacleMask2.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\ObstacleMask3.png
+        label: ObstacleMask3.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\ObstacleMask3.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask3.png"
+          projectPath: Assets\Sprites\Obstacle\ObstacleMask3.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+        label: ObstacleMaskFull.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMaskFull.png"
+          projectPath: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Platform
+        label: Platform
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Platform\Background.png
+        label: Background.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Platform\Background.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Background.png"
+          projectPath: Assets\Sprites\Platform\Background.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Platform\Foreground.png
+        label: Foreground.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Platform\Foreground.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Foreground.png"
+          projectPath: Assets\Sprites\Platform\Foreground.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Player
+        label: Player
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Player\PlayerHappy.png
+        label: PlayerHappy.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Player\PlayerHappy.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerHappy.png"
+          projectPath: Assets\Sprites\Player\PlayerHappy.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Player\PlayerNeutral.png
+        label: PlayerNeutral.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Player\PlayerNeutral.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerNeutral.png"
+          projectPath: Assets\Sprites\Player\PlayerNeutral.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Player\PlayerPog.png
+        label: PlayerPog.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Player\PlayerPog.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerPog.png"
+          projectPath: Assets\Sprites\Player\PlayerPog.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites\Player\PlayerSad.png
+        label: PlayerSad.png
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Player\PlayerSad.png
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerSad.png"
+          projectPath: Assets\Sprites\Player\PlayerSad.png
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        label: default-2021.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\UserSettings\\Layouts\\default-2021.dwlt"
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -490,21 +2524,320 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\AsyncBridge.Net35.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\big-logo@2x.png"
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.45.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Logging.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.45.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.UnityShim.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\Mono.Posix.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\ReadOnlyCollectionsInterfaces.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\sfw.net.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\System.Threading.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\pthreadVC2.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\sfw_x64.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\pthreadVC2.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\sfw_x86.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scenes\Main.unity
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+      projectPath: Assets\Scenes\Main.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle0.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle0.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle0.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle1.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle1.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle1.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle2.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle2.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle2.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle3.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle3.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle3.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle4.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle4.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle4.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle5.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle5.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle5.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask1.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask1.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask1.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask2.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask2.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask2.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask3.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask3.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask3.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMaskFull.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Platform\Background.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Background.png"
+      projectPath: Assets\Sprites\Platform\Background.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Platform\Foreground.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Foreground.png"
+      projectPath: Assets\Sprites\Platform\Foreground.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerHappy.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerHappy.png"
+      projectPath: Assets\Sprites\Player\PlayerHappy.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerNeutral.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerNeutral.png"
+      projectPath: Assets\Sprites\Player\PlayerNeutral.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerPog.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerPog.png"
+      projectPath: Assets\Sprites\Player\PlayerPog.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerSad.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerSad.png"
+      projectPath: Assets\Sprites\Player\PlayerSad.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings\Layouts\default-2021.dwlt
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\UserSettings\\Layouts\\default-2021.dwlt"
+      projectPath: UserSettings\Layouts\default-2021.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 34 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:12.755+02:00
+      cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:36.057+02:00
+      cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:14.483+02:00
+      cacheType: 7
   historyView:
-    currentLogHasUpdate: 1
-    currentTrackingStatusHasUpdate: 1
+    currentLogHasUpdate: 0
+    currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 0c20e6bc895807743e72a87f4355f3cf566cc718
+      mergeA: 
+      mergeB: 
+      authorName: "Vojt\u011Bch Dvo\u0159\xE1k"
+      authorEmail: xdvora3o@vutbr.cz
+      commitEmail: xdvora3o@vutbr.cz
+      commitName: "Vojt\u011Bch Dvo\u0159\xE1k"
+      summary: Now spawner should behave more randomly, game is now faster and faster
+      description: Random function is now function of time from start
+      timeString: 2021-10-14T18:27:28.000+02:00
+      commitTimeString: 2021-10-14T18:27:28.000+02:00
+      changes:
+      - path: Assets\Scenes\Main.unity
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+        projectPath: Assets\Scenes\Main.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Obstacle.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Obstacle.cs"
+        projectPath: Assets\Scripts\Obstacle.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Spawner.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Spawner.cs"
+        projectPath: Assets\Scripts\Spawner.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 470a4f3e5bea5b0f92df881a15146fa89ebbea34
+      mergeA: 
+      mergeB: 
+      authorName: "Vojt\u011Bch Dvo\u0159\xE1k"
+      authorEmail: xdvora3o@vutbr.cz
+      commitEmail: xdvora3o@vutbr.cz
+      commitName: "Vojt\u011Bch Dvo\u0159\xE1k"
+      summary: Made game more funny and easier
+      description: 'Obstacles were resized, there are now mini events (e. g. player
+
+        sprite
+        smiles when player earned some points), player mass was
+
+        changed...'
+      timeString: 2021-10-14T16:51:19.000+02:00
+      commitTimeString: 2021-10-14T16:51:19.000+02:00
+      changes:
+      - path: Assets\Materials\Background.mat
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Materials\\Background.mat"
+        projectPath: Assets\Materials\Background.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Obstacle.prefab
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Prefabs\\Obstacle.prefab"
+        projectPath: Assets\Prefabs\Obstacle.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Main.unity
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+        projectPath: Assets\Scenes\Main.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\GameManager.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\GameManager.cs"
+        projectPath: Assets\Scripts\GameManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Obstacle.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Obstacle.cs"
+        projectPath: Assets\Scripts\Obstacle.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Player.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Player.cs"
+        projectPath: Assets\Scripts\Player.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Spawner.cs
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Spawner.cs"
+        projectPath: Assets\Scripts\Spawner.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\UserSettings\\Layouts\\default-2021.dwlt"
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: abe74277dcd4bc8c71d1e866a2480330eb73bfbf
       mergeA: 
       mergeB: 
@@ -1461,14 +3794,110 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2021-10-14T10:09:07.890+02:00
+      updatedTimeString: 2021-10-14T18:53:39.054+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2021-10-14T18:53:13.927+02:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 0c20e6bc895807743e72a87f4355f3cf566cc718
+        mergeA: 
+        mergeB: 
+        authorName: "Vojt\u011Bch Dvo\u0159\xE1k"
+        authorEmail: xdvora3o@vutbr.cz
+        commitEmail: xdvora3o@vutbr.cz
+        commitName: "Vojt\u011Bch Dvo\u0159\xE1k"
+        summary: Now spawner should behave more randomly, game is now faster and
+          faster
+        description: Random function is now function of time from start
+        timeString: 2021-10-14T18:27:28.000+02:00
+        commitTimeString: 2021-10-14T18:27:28.000+02:00
+        changes:
+        - path: Assets\Scenes\Main.unity
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+          projectPath: Assets\Scenes\Main.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Obstacle.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Obstacle.cs"
+          projectPath: Assets\Scripts\Obstacle.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Spawner.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Spawner.cs"
+          projectPath: Assets\Scripts\Spawner.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 470a4f3e5bea5b0f92df881a15146fa89ebbea34
+        mergeA: 
+        mergeB: 
+        authorName: "Vojt\u011Bch Dvo\u0159\xE1k"
+        authorEmail: xdvora3o@vutbr.cz
+        commitEmail: xdvora3o@vutbr.cz
+        commitName: "Vojt\u011Bch Dvo\u0159\xE1k"
+        summary: Made game more funny and easier
+        description: 'Obstacles were resized, there are now mini events (e. g. player
+
+          sprite
+          smiles when player earned some points), player mass was
+
+          changed...'
+        timeString: 2021-10-14T16:51:19.000+02:00
+        commitTimeString: 2021-10-14T16:51:19.000+02:00
+        changes:
+        - path: Assets\Materials\Background.mat
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Materials\\Background.mat"
+          projectPath: Assets\Materials\Background.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Obstacle.prefab
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Prefabs\\Obstacle.prefab"
+          projectPath: Assets\Prefabs\Obstacle.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Main.unity
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+          projectPath: Assets\Scenes\Main.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\GameManager.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\GameManager.cs"
+          projectPath: Assets\Scripts\GameManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Obstacle.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Obstacle.cs"
+          projectPath: Assets\Scripts\Obstacle.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Player.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Player.cs"
+          projectPath: Assets\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Spawner.cs
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scripts\\Spawner.cs"
+          projectPath: Assets\Scripts\Spawner.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\UserSettings\\Layouts\\default-2021.dwlt"
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: abe74277dcd4bc8c71d1e866a2480330eb73bfbf
         mergeA: 
         mergeB: 
@@ -2477,32 +4906,32 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
-      gitPath: 
-      gitLfsPath: 
+      gitPath: C:\Users\vojon\AppData\Local\GitHubUnity\git\cmd\git.exe
+      gitLfsPath: C:\Users\vojon\AppData\Local\GitHubUnity\git-lfs\git-lfs.exe
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
       changingManually: 0
-    hasRemote: 0
+    hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:12.755+02:00
+      cacheType: 1
     metricsEnabled: 0
-    newRepositoryRemoteUrl: 
-    repositoryRemoteName: 
-    repositoryRemoteUrl: 
+    newRepositoryRemoteUrl: https://github.com/vojone/IZHV_E2.git
+    repositoryRemoteName: origin
+    repositoryRemoteUrl: https://github.com/vojone/IZHV_E2.git
     scroll: {x: 0, y: 0}
     userSettingsView:
-      gitName: 
-      gitEmail: 
-      newGitName: 
-      newGitEmail: 
+      gitName: Vojtech Dvorak
+      gitEmail: vvd1@centrum.cz
+      newGitName: Vojtech Dvorak
+      newGitEmail: vvd1@centrum.cz
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 
-        cacheType: 0
-    webTimeout: 0
-    gitTimeout: 0
+        updatedTimeString: 0001-01-01T00:00:00.000+00:00
+        cacheType: 8
+    webTimeout: 3000
+    gitTimeout: 5000
   locksView:
     currentRemoteHasUpdate: 0
     currentStatusEntriesHasUpdate: 0
@@ -2526,18 +4955,222 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-        lockedAt: 
+        lockedAt: 1 led 0001, 01:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:12.755+02:00
+      cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:14.483+02:00
+      cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2021-10-14T18:53:38.126+02:00
+      cacheType: 6
     lockedFiles: []
-    gitStatusEntries: []
+    gitStatusEntries:
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\AsyncBridge.Net35.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\big-logo@2x.png"
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.45.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Api.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Logging.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.45.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.Unity.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\GitHub.UnityShim.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\Mono.Posix.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\ReadOnlyCollectionsInterfaces.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\sfw.net.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\System.Threading.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\pthreadVC2.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x64\\sfw_x64.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\pthreadVC2.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Plugins\\GitHub\\Editor\\x86\\sfw_x86.dll"
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scenes\Main.unity
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Scenes\\Main.unity"
+      projectPath: Assets\Scenes\Main.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle0.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle0.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle0.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle1.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle1.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle1.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle2.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle2.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle2.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle3.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle3.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle3.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle4.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle4.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle4.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\Obstacle5.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\Obstacle5.png"
+      projectPath: Assets\Sprites\Obstacle\Obstacle5.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask1.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask1.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask1.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask2.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask2.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask2.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMask3.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMask3.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMask3.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Obstacle\\ObstacleMaskFull.png"
+      projectPath: Assets\Sprites\Obstacle\ObstacleMaskFull.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Platform\Background.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Background.png"
+      projectPath: Assets\Sprites\Platform\Background.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Platform\Foreground.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Platform\\Foreground.png"
+      projectPath: Assets\Sprites\Platform\Foreground.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerHappy.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerHappy.png"
+      projectPath: Assets\Sprites\Player\PlayerHappy.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerNeutral.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerNeutral.png"
+      projectPath: Assets\Sprites\Player\PlayerNeutral.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerPog.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerPog.png"
+      projectPath: Assets\Sprites\Player\PlayerPog.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Player\PlayerSad.png
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\Assets\\Sprites\\Player\\PlayerSad.png"
+      projectPath: Assets\Sprites\Player\PlayerSad.png
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings\Layouts\default-2021.dwlt
+      fullPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2\\UserSettings\\Layouts\\default-2021.dwlt"
+      projectPath: UserSettings\Layouts\default-2021.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -2554,7 +5187,7 @@ MonoBehaviour:
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
@@ -2564,13 +5197,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 
-    cacheType: 0
+    updatedTimeString: 2021-10-14T18:55:18.062+02:00
+    cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2021-10-14T09:30:25.515+02:00
+    updatedTimeString: 2021-10-14T18:55:32.300+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2021-10-14T09:30:56.429+02:00
+    updatedTimeString: 2021-10-14T18:55:32.237+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2588,10 +5221,10 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
+  repositoryProgressValue: 0
   repositoryProgressMessage: Listing changed files...
-  appManagerProgressValue: 0
-  appManagerProgressMessage: 
+  appManagerProgressValue: 1
+  appManagerProgressMessage: Initialized
   connections: []
   primaryConnectionUsername: 
 --- !u!114 &15
@@ -2655,7 +5288,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -2727,22 +5360,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Player
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Sprites/Player
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "C:\\Users\\vojon\\Documents\\\u0160kola\\3_sem\\IZHV\\IZHV_E2"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e560100
-    m_LastClickedID: 87678
-    m_ExpandedIDs: 0000000040660000ce670000
+    m_SelectedIDs: 56690000
+    m_LastClickedID: 26966
+    m_ExpandedIDs: 00000000ca670000cc670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2770,7 +5403,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000040660000
+    m_ExpandedIDs: 00000000ca670000cc670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2797,22 +5430,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Main
-      m_OriginalName: Main
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 29716
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
@@ -2898,23 +5531,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c740000
-      m_LastClickedID: 29820
-      m_ExpandedIDs: 4674fffff87bfffff4bfffff3cc8ffffc4d1ffff9edaffffa4dffffffee3ffffd6ecffff28fbffffdcbb0000
+      m_SelectedIDs: 16670000
+      m_LastClickedID: 26390
+      m_ExpandedIDs: 28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Player
-        m_OriginalName: Player
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 29772
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -3149,9 +5782,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.269359, y: -2.199511, z: -0.06273172}
+    m_Target: {x: -0.42045468, y: 0.1074613, z: -1.2274365}
     speed: 2
-    m_Value: {x: -4.269359, y: -2.199511, z: -0.06273172}
+    m_Value: {x: -0.42045468, y: 0.1074613, z: -1.2274365}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3202,9 +5835,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.9873238
+    m_Target: 4.9605365
     speed: 2
-    m_Value: 6.9873238
+    m_Value: 4.9605365
   m_Ortho:
     m_Target: 1
     speed: 2
