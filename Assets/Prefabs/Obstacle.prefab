@@ -135,7 +135,8 @@ MonoBehaviour:
   despawnLayerMask:
     serializedVersion: 2
     m_Bits: 4096
-  movementSpeed: 1
+  movementSpeed: 2
+  acceleration: 0.05
   movementDirection:
     x: -1
     y: 0

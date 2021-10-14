@@ -18,12 +18,12 @@ public class Spawner : MonoBehaviour
     /// <summary>
     /// Mean frequency of spawning as n per second.
     /// </summary>
-    public float spawnFrequencyMean = 1.0f;
+    private float spawnFrequencyMean = 2.0f;
     
     /// <summary>
     /// Standard deviation of the frequency of spawning as n per second.
     /// </summary>
-    public float spawnFrequencyStd = 0.5f;
+    private float spawnFrequencyStd = 0.4f;
     
     /// <summary>
     /// Position offset of the spawned obstacles.
@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
     /// <summary>
     /// Size of the spawned obstacles.
     /// </summary>
-    public float spawnSize = 1.0f;
+    private float spawnSize = 0.6f;
     
     /// <summary>
     /// Layer used for the spawned obstacles.

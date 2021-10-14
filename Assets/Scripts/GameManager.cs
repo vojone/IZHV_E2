@@ -99,6 +99,12 @@ public class GameManager : MonoBehaviour
             mCurrentScore += Time.deltaTime;
             // Update the score text.
             GetChildNamed(scoreText, "Value").GetComponent<Text>().text = $"{(int)(mCurrentScore)}";
+
+            int cutCurScore = (int)mCurrentScore;
+            var pl = player.GetComponent<Player>();
+            if(cutCurScore % pl.smileAtEvery == 0 && cutCurScore > 0) {
+                pl.setSprite(pl.spriteHappy);
+            }
         }
     }
 
@@ -180,5 +186,9 @@ public class GameManager : MonoBehaviour
     {
         var childTransform = go.transform.Find(name);
         return childTransform == null ? null : childTransform.gameObject;
+    }
+
+    public float getCurScore() {
+        return mCurrentScore;
     }
 }

@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
     public float rotationSpeed = 30.0f;
 
     /// <summary>
+    /// Specifies how many points player must earn to make his character smile
+    /// </summary>
+    public int smileAtEvery = 10;
+
+    /// <summary>
     /// Which axes should be rotated?
     /// </summary>
     public bool3 rotateAxis = new bool3(true, false, false);
@@ -63,6 +68,11 @@ public class Player : MonoBehaviour
     /// Sprite used in the pog state.
     /// </summary>
     public Sprite spritePog;
+
+    /// <summary>
+    /// Says ho many jumps are necessary to perform special jump
+    /// </summary>
+    public int pogJump = 3;
     
     /// <summary>
     /// Our RigidBody used for physics simulation.
@@ -98,6 +108,16 @@ public class Player : MonoBehaviour
     /// Current state of gravity - 1.0 for down, -1.0f for up.
     /// </summary>
     private float mCurrentGravity = 1.0f;
+
+    ///<summary>
+    ///Counter of jumps
+    ///</summary>
+    private int jumpCnt = 0;
+
+    ///<summary>
+    ///Special flag that indicates scpecial jump with rotation
+    ///</summary>
+    private bool  pogJumping = false;
     
     /// <summary>
     /// Called before the first frame update.
@@ -127,7 +147,18 @@ public class Player : MonoBehaviour
 
         // Impart the initial impulse if we are jumping.
         if (jumpMovement && onGround)
-        { mRB.velocity = -Physics2D.gravity * jumpVelocity; }
+        { 
+            setSprite(spriteNeutral);
+            pogJumping = false;
+            mRB.velocity = -Physics2D.gravity * jumpVelocity;
+
+            jumpCnt++;
+            if(jumpCnt == pogJump) {
+                jumpCnt = 0;
+                setSprite(spritePog);
+                pogJumping = true;
+            }
+        }
         
         // Switch gravity with vertical movement.
         if (verticalMovement != 0.0 && !mSwitchedGravity)
@@ -144,6 +175,8 @@ public class Player : MonoBehaviour
             ) * axisDirection);
             mSwitchedGravity = true;
         }
+
+           // transform.Rotate(0f,0f,rotationSpeed * Time.fixedDeltaTime);
     }
 
     /// <summary>
@@ -162,6 +195,10 @@ public class Player : MonoBehaviour
         return hitInfo.collider != null;
     }
 
+    public void setSprite(Sprite target) {
+        mSpriteRenderer.sprite = target;
+    }
+
     /// <summary>
     /// Update called for every update interval.
     /// </summary>
@@ -169,16 +206,15 @@ public class Player : MonoBehaviour
     {
         var onGround = IsOnGround();
         
-        if (!onGround)
-        { // While in mid-air, we can rotate.
-            mSpriteTransform.rotation = Quaternion.RotateTowards(
-                mSpriteTransform.rotation, mTargetRotation, 
-                rotationSpeed * Time.fixedDeltaTime
-            );
+        if (!onGround && pogJumping)
+        {   
+            //Every pog jump player rotates
+            transform.Rotate(0f, 0f, rotationSpeed * Time.fixedDeltaTime);
         }
         else
-        { // Snap to target rotation once on solid ground.
-            mSpriteTransform.rotation = mTargetRotation;
+        { 
+            //Normally he doesnt rotate
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
     
@@ -192,9 +228,11 @@ public class Player : MonoBehaviour
         var hitObstacle = mBC.IsTouchingLayers(obstacleLayerMask);
         
         if (hitObstacle)
-        { // If we collide with any obstacle -> end the game.
+        { 
+            pogJumping = true;
+            // If we collide with any obstacle -> end the game.
             // Update the sprite.
-            mSpriteRenderer.sprite = spriteSad; 
+            setSprite(spriteSad);
             // Move to the uncollidable layer.
             gameObject.layer = LayerMask.NameToLayer("Uncollidable");
             // Fling the obstacle out of the screen.
