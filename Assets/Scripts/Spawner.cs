@@ -78,7 +78,7 @@ public class Spawner : MonoBehaviour
             if (spawnAccumulator >= nextSpawnIn)
             { // Spawn at most one obstacle per frame.
                 spawnAccumulator -= nextSpawnIn;
-                nextSpawnIn = RandomNormal(spawnFrequencyMean, spawnFrequencyStd);
+                nextSpawnIn = RandomNormal(curSpawnFMean, spawnFrequencyStd);
                 
                 SpawnObstacle();
             }
@@ -98,7 +98,7 @@ public class Spawner : MonoBehaviour
         var obstacle = Instantiate(obstaclePrefab, transform);
         var speed = obstacle.GetComponent<Obstacle>().movementSpeed;
         obstacle.GetComponent<Obstacle>().movementSpeed = speed + acceleration * time;
-        curSpawnFMean = (curSpawnFMean > spawnFrequencyStd) ? curSpawnFMean - acceleration : spawnFrequencyStd;
+        curSpawnFMean = (curSpawnFMean > 2*spawnFrequencyStd) ? curSpawnFMean - acceleration : spawnFrequencyStd;
 
         // Move it to the target location.
         var spawnDown = RandomBool();
