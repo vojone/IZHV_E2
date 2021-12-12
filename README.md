@@ -6,3 +6,6 @@ Simple 2D game. Try to not collide with any boxes by jumping with your character
 
 ## Control
 `Space` by holding space the jump is charging. 
+
+## Author
+Author of exercise template is Tomas Polasek.
